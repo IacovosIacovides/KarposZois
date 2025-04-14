@@ -29,9 +29,10 @@
       <!-- Close Button -->
       <button class="close-btn" id="close-menu-btn">&times;</button>
       <div class="menu">
-        <a href="#" class="menu-link">HOME</a>
-        <a href="#" class="menu-link">ABOUT US</a>
-        <a href="#" class="menu-link">Link 3</a>
+        <a href="#home" class="menu-link">HOME</a>
+        <a href="#about" class="menu-link">ABOUT US</a>
+        <a href="#products" class="menu-link">PRODUCTS</a>
+        <a href="#location" class="menu-link">LOCATION</a>
       </div>
     </div>
   </div>
@@ -45,56 +46,176 @@
         </h1>
       <div>
         <a href="https://wolt.com/el/cyp/nicosia/venue/karpos-zois?srsltid=AfmBOoq6HpuR9bGl4-53uiSrScJ21b513tc42yzFQ4G9eaalQ_94OeU-" target="_blank" class="btn btn-outline-light">Order Online</a>
-        <a href="#" class="btn btn-outline-light">More About Us</a>
+        <a href="#about" class="btn btn-outline-light">More About Us</a>
       </div>
     </div>
     <div class="social-icons">
       <a href="https://www.facebook.com/p/Karpos-Zois-61557723311218/" target="_blank"><i class="fab fa-facebook"></i></a>
       <a href="https://www.instagram.com/karposzois/" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-wolt"></i></a>
-
+      <a href="https://wolt.com/el/cyp/nicosia/venue/karpos-zois?srsltid=AfmBOoq6HpuR9bGl4-53uiSrScJ21b513tc42yzFQ4G9eaalQ_94OeU-" target="_blank"><i class="fa-solid fa-truck"></i></a>
     </div>
     <div class="scroll-down">
       <i class="fas fa-arrow-down animate__animated animate__shakeY"></i> <span style="margin-left: 0.8rem;"></span>Scroll Down
     </div>
   </div>
 
-  <section class="about-us" id="#about-us">
-	<div class="container"  data-mdb-animation-init data-mdb-toggle="animation"
-  data-mdb-animation="slide-in-left"
-  data-mdb-animation-start="onScroll"
-  data-mdb-animation-on-scroll="repeat">
-		<div class="row gx-4 align-items-center justify-content-between">
-			<div class="col-md-5 order-2 order-md-1">
-				<div class="mt-5 mt-md-0">
-					<span class="text-muted">Our Story</span>
-					<h2 class="display-5 fw-bold">About Us</h2>
-					<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris .</p>
-					<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-				</div>
-			</div>
-			<div class="col-md-6 offset-md-1 order-1 order-md-2">
-				<div class="row gx-2 gx-lg-3">
-					<div class="col-6">
-						<div class="mb-2"><img class="img-fluid rounded-3" src="https://freefrontend.dev/assets/square.png"></div>
-					</div>
-					<div class="col-6">
-						<div class="mb-2"><img class="img-fluid rounded-3" src="https://freefrontend.dev/assets/square.png"></div>
-					</div>
-					<div class="col-6">
-						<div class="mb-2"><img class="img-fluid rounded-3" src="https://freefrontend.dev/assets/square.png"></div>
-					</div>
-					<div class="col-6">
-						<div class="mb-2"><img class="img-fluid rounded-3" src="https://freefrontend.dev/assets/square.png"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+  <section class="about-us py-5" id="about">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        
+        <!-- Text Content -->
+        <div class="col-md-6 mb-4 mb-md-0">
+          <h2 class="display-5 fw-bold">About Us</h2>
+          <p class="lead">
+            Welcome to Karpos Zois, where tradition meets taste. Born out of a love for authentic Cypriot delights, we take pride in offering a curated selection of Mediterranean-inspired treats. From the finest nuts and dried fruits to handcrafted nut butters, teas, and wines, our collection is designed to delight your senses.
+          </p>
+          <p class="lead">
+            Whether you're searching for the perfect gift or simply treating yourself, each visit promises exceptional quality, unforgettable flavors, and a connection to the heart of the Mediterranean. Let us bring a piece of Cyprus to your table.
+          </p>
+        </div>
+  
+        <!-- Image Grid -->
+        <div class="col-md-6">
+          <div class="row g-2">
+            <div class="col-6">
+              <img src="assets/karidi-min.jpg" alt="Karidi" class="img-fluid rounded-3">
+            </div>
+            <div class="col-6">
+              <img src="assets/sousoukoi-min.jpg" alt="Sousoukoi" class="img-fluid rounded-3">
+            </div>
+            <div class="col-6">
+              <img src="assets/fistikia.png" alt="Fistikia" class="img-fluid rounded-3">
+            </div>
+            <div class="col-6">
+              <img src="assets/marmelades.png" alt="Marmelades" class="img-fluid rounded-3">
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+
+<!-- Products Section -->
+ <section>
+<div class="hero2" id="products">
+  <div class="hero2-overlay"></div>
+  
+  <div class="hero2-content">
+    <h2>Some of our Products</h2>
+    <p class="instruction">Hover over the dots to explore our products!</p>
+  </div>
+  
+  <div class="hotspot" style="top: 50%; left: 35%;">
+    <div class="hotspot-ping"></div>
+    <div class="hotspot-dot"></div>
+    <span class="tooltip"><img src="assets/marmelades.jpg" class="tooltipimg" alt="Marmelades"></span>
+  </div>
+  
+  <div class="hotspot" style="top: 40%; left: 20%;">
+    <div class="hotspot-ping"></div>
+    <div class="hotspot-dot"></div>
+    <span class="tooltip"><img src="assets/sousouki.jpg" class="tooltipimg" alt="Sousouki"></span>
+  </div>
+  
+  <div class="hotspot" style="top: 52%; left: 55%;">
+    <div class="hotspot-ping"></div>
+    <div class="hotspot-dot"></div>
+    <span class="tooltip"><img src="assets/furnos.jpg" alt="Fournos" class="tooltipimg"></span>
+  </div>
+  
+  <div class="hotspot" style="top: 70%; left: 15%;">
+    <div class="hotspot-ping"></div>
+    <div class="hotspot-dot"></div>
+    <span class="tooltip"><img src="assets/kounnes.jpg" alt="Kounnes" class="tooltipimg"></span>
+  </div>
+  
+  <div class="hotspot" style="top: 55%; left: 86%;">
+    <div class="hotspot-ping"></div>
+    <div class="hotspot-dot"></div>
+    <span class="tooltip"><img src="assets/teapots.jpg" alt="Teapots" class="tooltipimg"></span>
+  </div>
+</div>
 </section>
+
+<section class="location py-5" id="location">
+  <div class="container">
+    <div class="row align-items-center justify-content-between">
+      
+      <!-- Text Content -->
+      <div class="col-md-5 mb-4 mb-md-0">
+        <h2 class="display-5 fw-bold">Where to Find Us</h2>
+        <p class="lead">
+          Visit our store and explore authentic Cypriot delights in a warm and welcoming atmosphere.
+        </p>
+        <ul class="list-unstyled">
+          <li class="locationpoints">
+            <i class="fas fa-map-marker-alt me-2"></i>Kyrenias 131, Aglantzia 2113, Cyprus
+          </li>
+          <li class="locationpoints">
+            <a href="tel:+35722332555" style="color: white;">
+              <i class="fas fa-phone-alt me-2"></i>+357 22332555
+            </a>
+          </li>
+          <li class="locationpoints">
+            <a href="https://www.instagram.com/karposzois/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="
+               target="_blank" 
+               style="color: white;">
+              <i class="fa-brands fa-instagram"></i>Instagram
+            </a>
+          </li>
+          <li class="locationpoints">
+            <a href="https://wolt.com/el/cyp/nicosia/venue/karpos-zois?srsltid=AfmBOoq6HpuR9bGl4-53uiSrScJ21b513tc42yzFQ4G9eaalQ_94OeU-" target="_blank" style="color: white;"><i class="fa-solid fa-truck"></i>Get you order delivered</a>
+          </li>
+        </ul>
+
+        <!-- Hours Section -->
+        <hr class="my-3">
+        <h4 class="fw-semibold text-white">Opening Hours</h4>
+        <ul class="list-unstyled hours-list mb-2">
+          <li class="locationpoints"><strong>Sunday:</strong> Closed</li>
+          <li class="locationpoints"><strong>Monday:</strong> 9:30 am – 7:00 pm</li>
+          <li class="locationpoints"><strong>Tuesday:</strong> 9:30 am – 7:00 pm</li>
+          <li class="locationpoints"><strong>Wednesday:</strong> 9:30 am – 7:00 pm</li>
+          <li class="locationpoints"><strong>Thursday:</strong> 9:30 am – 7:00 pm</li>
+          <li class="locationpoints"><strong>Friday:</strong> 9:30 am – 7:00 pm</li>
+          <li class="locationpoints"><strong>Saturday:</strong> 9:30 am – 7:00 pm</li>
+        </ul>
+        <p class="lead text-white" style="font-size: 1rem; font-style: italic; color: #93C572 !important;">
+          On national holidays, please call the shop for hours.
+        </p>
+      </div>
+      
+      <!-- Responsive Map -->
+      <div class="col-md-7">
+        <div class="map-responsive">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3262.323714247428!2d33.38417997625637!3d35.14854667276386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14de1954f1c9dfbd%3A0x44b7fa950999eaf0!2sKarpos%20Zois!5e0!3m2!1sen!2s!4v1744649203319!5m2!1sen!2s"
+            width="100%"
+            height="80vh"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
   <!-- Bootstrap JS -->
   <script src="script.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+
 </body>
 </html>
+
+
+
