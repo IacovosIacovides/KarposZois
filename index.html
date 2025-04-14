@@ -3,57 +3,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Glint-like Design</title>
+  <title>Karpos Zois</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Font Awesome Icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap" rel="stylesheet">
+  <!--Animate css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
-  <!-- Burger Menu -->
-  <nav class="navbar">
-    <div class="container-fluid">
-      <button class="navbar-toggler second-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
-        aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-        <div class="animated-icon2"><span></span><span></span><span></span><span></span></div>
-      </button>
-      <div class="collapse menu-container" id="navbarMenu">
-        <div class="menu bg-body-tertiary p-4 shadow rounded">
-          <a href="#" class="btn btn-link btn-block text-dark">Link 1</a>
-          <a href="#" class="btn btn-link btn-block text-dark">Link 2</a>
-          <a href="#" class="btn btn-link btn-block text-dark">Link 3</a>
-        </div>
+<!-- Burger Menu -->
+<nav class="navbar position-fixed top-0 start-0 w-100">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+    <!-- Logo -->
+    <a href="#" class="logo-container">
+      <img src="assets/logo.png" alt="Karpos Zois Logo" class="logo-img img-fluid">
+    </a>
+    <!-- Burger Menu -->
+    <button class="navbar-toggler second-button" type="button" id="burger-menu-btn">
+      <div class="animated-icon2"><span></span><span></span><span></span></div>
+    </button>
+    <div class="menu-container" id="menu-container">
+      <!-- Close Button -->
+      <button class="close-btn" id="close-menu-btn">&times;</button>
+      <div class="menu">
+        <a href="#" class="menu-link">HOME</a>
+        <a href="#" class="menu-link">ABOUT US</a>
+        <a href="#" class="menu-link">Link 3</a>
       </div>
     </div>
-  </nav>
-
+  </div>
+</nav>
   <!-- Hero Section -->
-  <div class="hero">
+  <div class="hero" id="home">
     <div class="hero-overlay"></div>
     <div class="hero-content">
-        <h1>Your local source for Mediterranean delights — nuts, <br> dried fruits, homemade nut butters, and more. <br>Discover our unique teas, wines, and custom gift boxes. <br> Quality and taste in every visit.
+        <h3>TRADITIONAL CYPRIOT DELIGTS</h3>
+        <h1>Our go-to for Mediterranean delights — nuts, dried fruits, <br>nut butters, teas, wines, and custom gifts. <br> Quality and flavor in every visit.
         </h1>
       <div>
-        <a href="#" class="btn btn-outline-light">Start a Project</a>
+        <a href="https://wolt.com/el/cyp/nicosia/venue/karpos-zois?srsltid=AfmBOoq6HpuR9bGl4-53uiSrScJ21b513tc42yzFQ4G9eaalQ_94OeU-" target="_blank" class="btn btn-outline-light">Order Online</a>
         <a href="#" class="btn btn-outline-light">More About Us</a>
       </div>
     </div>
     <div class="social-icons">
-      <a href="#"><i class="fab fa-facebook"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-behance"></i></a>
-      <a href="#"><i class="fas fa-globe"></i></a>
+      <a href="https://www.facebook.com/p/Karpos-Zois-61557723311218/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/karposzois/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-wolt"></i></a>
+
     </div>
     <div class="scroll-down">
-      <i class="fas fa-arrow-down"></i> Scroll Down
+      <i class="fas fa-arrow-down animate__animated animate__shakeY"></i> <span style="margin-left: 0.8rem;"></span>Scroll Down
     </div>
   </div>
 
+  <section class="about-us" id="#about-us">
+	<div class="container"  data-mdb-animation-init data-mdb-toggle="animation"
+  data-mdb-animation="slide-in-left"
+  data-mdb-animation-start="onScroll"
+  data-mdb-animation-on-scroll="repeat">
+		<div class="row gx-4 align-items-center justify-content-between">
+			<div class="col-md-5 order-2 order-md-1">
+				<div class="mt-5 mt-md-0">
+					<span class="text-muted">Our Story</span>
+					<h2 class="display-5 fw-bold">About Us</h2>
+					<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris .</p>
+					<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+				</div>
+			</div>
+			<div class="col-md-6 offset-md-1 order-1 order-md-2">
+				<div class="row gx-2 gx-lg-3">
+					<div class="col-6">
+						<div class="mb-2"><img class="img-fluid rounded-3" src="https://freefrontend.dev/assets/square.png"></div>
+					</div>
+					<div class="col-6">
+						<div class="mb-2"><img class="img-fluid rounded-3" src="https://freefrontend.dev/assets/square.png"></div>
+					</div>
+					<div class="col-6">
+						<div class="mb-2"><img class="img-fluid rounded-3" src="https://freefrontend.dev/assets/square.png"></div>
+					</div>
+					<div class="col-6">
+						<div class="mb-2"><img class="img-fluid rounded-3" src="https://freefrontend.dev/assets/square.png"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
   <!-- Bootstrap JS -->
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.js"></script>
 </body>
 </html>
