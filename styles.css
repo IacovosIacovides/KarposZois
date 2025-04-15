@@ -213,7 +213,10 @@ h1 {
 .hotspot:hover .tooltip {
   opacity: 1;
 }
-
+/* 
+.hotspot.preview .tooltip {
+  opacity: 1 !important;
+} */
 
 .hero {
   min-height: 100vh;
@@ -825,4 +828,46 @@ img {
     font-size: 15px;
   }
 }
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  /* Ensure hero text isn’t flush against the edge */
+  .hero-content {
+    padding: 0 1rem; /* Adjust the padding as needed */
+  }
 
+  /* Reposition social icons for mobile */
+  .social-icons {
+    position: absolute;
+    top: 20px;                /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;      /* Horizontal alignment */
+    gap: 1rem;                /* Spacing between icons */
+  }
+
+  .social-icons a {
+    font-size: 1.4rem;        /* Adjust icon size */
+  }
+  
+  /* Scale down hotspot tooltip images */
+  .tooltipimg {
+    max-height: 150px;           /* Reduced max-height on mobile */
+    width: auto;
+  }
+}
+
+/* Further refinements for very small screens */
+@media (max-width: 500px) {
+  .hero-content h1 {
+    font-size: 1.8rem;  /* Slightly smaller hero headline */
+  }
+  .hero-content h3 {
+    font-size: 1rem;    /* Smaller sub-headline */
+  }
+  /* Optionally adjust button sizes */
+  .hero .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}

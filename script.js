@@ -54,3 +54,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
   observer.observe(aboutSection);
 });
+// document.addEventListener("DOMContentLoaded", function() {
+//   const productsSection = document.getElementById("products");
+//   const firstHotspot = document.querySelector(".hotspot"); // selects the first hotspot in the section
+  
+//   if (!productsSection || !firstHotspot) {
+//     console.error("Either the products section or a hotspot could not be found.");
+//     return;
+//   }
+  
+//   const observer = new IntersectionObserver((entries) => {
+//     entries.forEach((entry) => {
+//       if (entry.isIntersecting) {
+//         // Add preview class to only the first hotspot
+//         firstHotspot.classList.add("preview");
+//         // Remove the preview class after 4 seconds
+//         setTimeout(() => {
+//           firstHotspot.classList.remove("preview");
+//         }, 4000);
+        
+//         // Disconnect if you only need this action once
+//         observer.disconnect();
+//       }
+//     });
+//   }, { threshold: 0.1 });
+  
+//   observer.observe(productsSection);
+// });
+
